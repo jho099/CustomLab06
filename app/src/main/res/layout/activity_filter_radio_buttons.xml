@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/upload_date"
             android:paddingRight="10dp"
+            android:color="#f00"
             />
         <RadioButton
             android:id="@+id/rb_views"
@@ -44,6 +45,7 @@
             android:layout_height="wrap_content"
             android:text="@string/view_count"
             android:paddingRight="10dp"
+            android:color="#f00"
             />
 
     </RadioGroup>
