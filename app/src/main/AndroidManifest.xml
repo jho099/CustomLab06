@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.hojennifer.myapplication">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <dist:module dist:instant="true" />
 
     <application
@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".filterRadioButtons"></activity>
         <activity android:name=".MainActivity">
+            android:hardwareAccelerated="true"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

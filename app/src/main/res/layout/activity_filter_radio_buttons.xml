@@ -30,6 +30,7 @@
             android:text="@string/relevance"
             android:paddingRight="10dp"
             android:color="#f00"
+            android:checked="true"
             />
         <RadioButton
             android:id="@+id/rb_upload"
@@ -49,4 +50,6 @@
             />
 
     </RadioGroup>
+
+
 </RelativeLayout>

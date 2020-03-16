@@ -9,13 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horizontalGL"
-        app:layout_constraintGuide_percent="0.15"
+        app:layout_constraintGuide_percent="0.10"
         android:orientation="horizontal"/>
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horizontalGL2"
-        app:layout_constraintGuide_percent="0.58"
+        app:layout_constraintGuide_percent="0.53"
         android:orientation="horizontal"/>
 
     <TextView
@@ -62,8 +62,8 @@
         />
     <TextView
         android:id="@+id/blank"
-        android:layout_width="280dp"
-        android:layout_height="200dp"
+        android:layout_width="318dp"
+        android:layout_height="235dp"
         android:text="@string/white_text"
         android:gravity="center"
         android:textColor="#fff"
@@ -72,6 +72,16 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalGL2"
         android:background="@drawable/tvborder"
         android:visibility="invisible"
+        />
+    <include
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topResult"
+        app:layout_constraintBottom_toBottomOf="@+id/blank"
+        app:layout_constraintLeft_toLeftOf="@+id/blank"
+        app:layout_constraintRight_toRightOf="@+id/blank"
+        layout="@layout/webview"
         />
     <TextView
         android:id="@+id/topResult"
