@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="search">Search something on YouTube:</string>
-    <string name="enter_search_term">Enter search term</string>
+    <string name="enter_search_term">Enter search term(s)</string>
     <string name="search_button">search</string>
     <string name="filter">Filter videos by</string>
     <string name="relevance">Relevance</string>

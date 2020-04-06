@@ -9,13 +9,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horizontalGL"
-        app:layout_constraintGuide_percent="0.10"
+        app:layout_constraintGuide_percent="0.15"
         android:orientation="horizontal"/>
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/horizontalGL2"
-        app:layout_constraintGuide_percent="0.53"
+        app:layout_constraintGuide_percent="0.49"
+        android:orientation="horizontal"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalGL3"
+        app:layout_constraintGuide_percent="0.33"
         android:orientation="horizontal"/>
 
     <TextView
@@ -38,7 +44,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
-
+<!--
     <include
         android:id="@+id/layout"
         android:layout_width="fill_parent"
@@ -46,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@id/queryET"
         layout="@layout/activity_filter_radio_buttons" />
 
-
+-->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="80dp"
@@ -56,14 +62,14 @@
         android:textColor="#fff"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGL3"
         android:background="@drawable/roundedbutton"
         android:onClick="searchVideos"
         />
     <TextView
         android:id="@+id/blank"
-        android:layout_width="318dp"
-        android:layout_height="235dp"
+        android:layout_width="338dp"
+        android:layout_height="259dp"
         android:text="@string/white_text"
         android:gravity="center"
         android:textColor="#fff"
@@ -78,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/topResult"
-        app:layout_constraintBottom_toBottomOf="@+id/blank"
+
         app:layout_constraintLeft_toLeftOf="@+id/blank"
         app:layout_constraintRight_toRightOf="@+id/blank"
         layout="@layout/webview"

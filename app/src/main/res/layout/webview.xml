@@ -6,8 +6,8 @@
     tools:context=".MainActivity">
 
     <WebView
-        android:layout_width="304dp"
-        android:layout_height="210dp"
+        android:layout_width="330dp"
+        android:layout_height="224dp"
         android:id="@+id/webView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

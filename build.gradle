@@ -4,7 +4,8 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        // https://mvnrepository.com/artifact/com.google.apis/google-api-services-youtube
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
@@ -18,10 +19,13 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
+
+
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
